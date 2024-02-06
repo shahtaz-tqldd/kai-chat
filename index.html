@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/assets/favicon.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css styling -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- lordicons -->
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <!-- font awesome icons kit -->
+    <script src="https://kit.fontawesome.com/03c1d2f3f1.js" crossorigin="anonymous"></script>
+    <!-- jquery libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- title of the website -->
+    <title>Kai Chat</title>
+</head>
+
+<body>
+    <section>
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <!-- LOGO -->
+            <div class="logo">
+                <h1>
+                    <lord-icon src="https://cdn.lordicon.com/hpivxauj.json" trigger="hover" colors="primary:#ff662a"
+                        target="h1" style="width:24px;height:24px">
+                    </lord-icon>
+                    Kai Chat
+                </h1>
+            </div>
+            <!-- SEARCH BAR -->
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search Chat" />
+                <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target="div"
+                    style="width:25px;height:25px" class="search-icon">
+                </lord-icon>
+            </div>
+
+            <!-- CHAT PROFILES -->
+            <div id="profiles">
+                <!-- profile-1 -->
+                <div onclick="handleChat(this)" class="profile">
+                    <div>
+                        <img src="https://www.leisureopportunities.co.uk/images/imagesX/HIGH799405_746782.jpg" alt="" />
+                        <div>
+                            <h3>Prince Harry</h3>
+                            <p><small>Hey Nice to meet you bro...</small></p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                </div>
+                <!-- profile-2 -->
+                <div onclick="handleChat(this)" class="profile">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                            alt="" />
+                        <div>
+                            <h3>Alaysha Saba</h3>
+                            <p><small>That's a great idea man...</small></p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                </div>
+                <!-- profile-3 -->
+                <div onclick="handleChat(this)" class="profile">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyn361mcfxr1TxFBXw0kM3tRNKpmmzoaNMjA&usqp=CAU"
+                            alt="" />
+                        <div>
+                            <h3>Rafik Uncle</h3>
+                            <p><small>Start Chat with Rafik Uncle</small></p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAT BOX -->
+        <div class="chatbox">
+            <div id="chat-intro">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/chatroom-3242927-2700394.png?f=webp"
+                    alt="" />
+                <p>Chat with your Buddies in Kai Chat</p>
+            </div>
+
+            <div id="selected-profile"></div>
+
+            <div id="chat-body">
+                <div id="user-chat"></div>
+                <div id="bot-chat"></div>
+            </div>
+            <form id="chat-writing-box" class="display-none">
+                <input type="text" name="msg" class="write-message" placeholder="Start Typing..." required>
+                <i class="fa-solid fa-comment-arrow-up-right"></i>
+            </form>
+        </div>
+    </section>
+
+    <div class="bg-group">
+        <button onclick="handleBgChange(this)" class="selected-btn" style="background-image: url('https://static.vecteezy.com/system/resources/previews/007/941/519/original/abstract-violet-purple-background-with-fluid-shapes-and-simple-lines-colorful-orange-design-cool-and-modern-concept-eps10-vector.jpg')"></button>
+        <button onclick="handleBgChange(this)" style="background-image: url('https://wallpaperaccess.com/full/49907.jpg')"></button>
+        <button onclick="handleBgChange(this)" style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/382/844/original/abstract-geometric-shape-colorful-gradient-background-free-vector.jpg')"></button>
+      </div>
+      
+
+    <!-- JAVASCRIPT AND JQUERY FILES -->
+    <script src="/js/app.js"></script>
+    <script src="/js/background.js"></script>
+</body>
+
+</html>
